@@ -7,8 +7,28 @@ Telegram bots. Works with [PyTelegramBOTAPI](https://github.com/eternnoir/pyTele
 
 ### Installation:
 
+- Using pip:
+
 ```bash
-pip install calendar_pytba
+pip install calendar-pytba
+```
+
+- Using poetry:
+
+```bash
+poetry add calendar-pytba
+```
+
+- Build from source:
+
+[Install](https://python-poetry.org/docs/#installation) Poetry
+
+```bash
+git clone https://github.com/pavelan0khin/calendar-pytba.git
+
+cd calendar-pytba
+
+poetry build
 ```
 
 ### Usage:
