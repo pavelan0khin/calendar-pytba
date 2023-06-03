@@ -1,8 +1,8 @@
-# PYTBA-Calendar
+# calendar-pytba
 
 
 Library for creating a calendar from InlineKeyboardMarkup in
-Telegram bots. Works with [PyTelegramBOTAPI](https://github.com/eternnoir/pyTelegramBotAPI) library
+Telegram bots. Works with [pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI) library
 
 
 ### Installation:
@@ -40,3 +40,9 @@ poetry build
 ### Demo:
 
 ![Alt Text](examples/demo.gif)
+
+
+### You can also see an example of how it works:
+
+- [Telegram Bot](https://t.me/calendarpytbaexamplebot)
+- [Source code](https://github.com/pavelan0khin/calendar-pytba-example)
