@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "calendar-pytba"
-version = "1.0.0"
+version = "1.0.1"
 description = ""
 authors = ["Pavel Anokhin <p.a.anokhin@gmail.com>"]
 readme = "readme.md"
