@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "calendar-pytba"
+version = "1.0.0"
+description = ""
+authors = ["Pavel Anokhin <p.a.anokhin@gmail.com>"]
+readme = "readme.md"
+packages = [{include = "calendar_pytba"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytelegrambotapi = "^4.12.0"
+python-dateutil = "^2.8.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
