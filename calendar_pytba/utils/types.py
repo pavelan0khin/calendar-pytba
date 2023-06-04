@@ -2,6 +2,7 @@ class CalendarLanguage:
     EN = "en"
     RU = "ru"
     UA = "ua"
+    ES = "es"
 
 
 class CallBackData:
