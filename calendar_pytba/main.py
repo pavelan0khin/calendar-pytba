@@ -5,16 +5,16 @@ from dateutil.relativedelta import relativedelta
 from telebot import types  # noqa
 
 from calendar_pytba.utils import text
-from calendar_pytba.utils.types import CalendarLanguage, CallBackData
+from calendar_pytba.utils.types import CalendarLanguage, CallBackData, CalendarSymbol
 
 
 class Calendar:
     def __init__(
         self,
         language: str = CalendarLanguage.EN,
-        empty_day_symbol: str = " ",
-        next_page_symbol: str = "→",
-        previous_page_symbol: str = "←",
+        empty_day_symbol: str = CalendarSymbol.EMPTY_DAY,
+        next_page_symbol: str = CalendarSymbol.NEXT_PAGE,
+        previous_page_symbol: str = CalendarSymbol.PREVIOUS_PAGE,
         month_names: dict = text.MONTH_NAMES,
         week_days_names: dict = text.WEEK_DAYS_NAMES,
         week_days_short_names: dict = text.WEEK_DAYS_SHORT_NAMES,
