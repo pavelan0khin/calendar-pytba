@@ -32,6 +32,8 @@ class Calendar:
         :param month_names: dict, dictionary with the names of the months
         :param week_days_names: dict, dictionary with the names of the weekdays
         :param week_days_short_names: dict, dictionary with the short names of the weekdays
+        :param start_from_sunday: bool, In the US, UK and Israel, the calendar week can start on Sunday.
+               By default, the week starts on Monday
         """
         self.language = language
         self.markup: types.InlineKeyboardMarkup = types.InlineKeyboardMarkup(
