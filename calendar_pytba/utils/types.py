@@ -2,6 +2,7 @@ class CalendarLanguage:
     EN = "en"
     RU = "ru"
     UA = "ua"
+    ES = "es"
 
 
 class CallBackData:
@@ -15,3 +16,9 @@ class CallBackData:
     PREVIOUS_YEARS = "previous_years"
     NEXT_YEARS = "next_years"
     EMPTY_WEEKDAY = "empty_weekday"
+
+
+class CalendarSymbol:
+    EMPTY_DAY = " "
+    NEXT_PAGE = "→"
+    PREVIOUS_PAGE = "←"

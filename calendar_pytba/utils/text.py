@@ -43,6 +43,20 @@ MONTH_NAMES = {
         11: "Листопад",
         12: "Грудень",
     },
+    CalendarLanguage.ES: {
+        1: "Enero",
+        2: "Febrero",
+        3: "Marzo",
+        4: "Abril",
+        5: "Mayo",
+        6: "Junio",
+        7: "Julio",
+        8: "Agosto",
+        9: "Septiembre",
+        10: "Octubre",
+        11: "Noviembre",
+        12: "Diciembre",
+    },
 }
 
 WEEK_DAYS_NAMES = {
@@ -73,6 +87,15 @@ WEEK_DAYS_NAMES = {
         5: "Субота",
         6: "Неділя",
     },
+    CalendarLanguage.ES: {
+        0: "Lunes",
+        1: "Martes",
+        2: "Miércoles",
+        3: "Jueves",
+        4: "Viernes",
+        5: "Sábado",
+        6: "Domingo",
+    },
 }
 
 WEEK_DAYS_SHORT_NAMES = {
@@ -102,5 +125,14 @@ WEEK_DAYS_SHORT_NAMES = {
         4: "ПТ",
         5: "СБ",
         6: "НД",
+    },
+    CalendarLanguage.ES: {
+        0: "Lun",
+        1: "Mar",
+        2: "Mié",
+        3: "Jue",
+        4: "Vie",
+        5: "Sáb",
+        6: "Dom",
     },
 }
