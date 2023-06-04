@@ -18,6 +18,7 @@ class Calendar:
         month_names: dict = text.MONTH_NAMES,
         week_days_names: dict = text.WEEK_DAYS_NAMES,
         week_days_short_names: dict = text.WEEK_DAYS_SHORT_NAMES,
+        start_from_sunday: bool = False
     ):
         """
         The language is responsible for writing the names of the months,
@@ -42,6 +43,7 @@ class Calendar:
         self.month_names = month_names
         self.week_days_names = week_days_names
         self.week_days_short_names = week_days_short_names
+        self.start_from_sunday = start_from_sunday
 
     def _get_month_name(self, month: int) -> str:
         return self.month_names.get(self.language).get(month)
@@ -58,8 +60,18 @@ class Calendar:
             ),
         )
 
+    def _reorder_weekdays_from_sunday(self) -> dict:
+        weekdays: dict = self.week_days_short_names.get(self.language)
+        last_item = dict([list(weekdays.items())[-1]])
+        weekdays = dict(list(weekdays.items())[:-1])
+        weekdays = {**last_item, **weekdays}
+        return weekdays
+
     def _add_weekdays_line(self):
-        weekdays = self.week_days_short_names.get(self.language)
+        if self.start_from_sunday:
+            weekdays = self._reorder_weekdays_from_sunday()
+        else:
+            weekdays = self.week_days_short_names.get(self.language)
         buttons = [
             types.InlineKeyboardButton(
                 weekdays.get(weekday),
@@ -71,6 +83,8 @@ class Calendar:
 
     def _add_weeks(self, date: datetime.date):
         start_week_day, days_in_month = calendar.monthrange(date.year, date.month)
+        if self.start_from_sunday:
+            start_week_day += 1
         week = []
         empty_day = types.InlineKeyboardButton(
             self.empty_day_symbol, callback_data=CallBackData.EMPTY_WEEKDAY
