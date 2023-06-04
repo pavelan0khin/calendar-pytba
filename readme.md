@@ -1,3 +1,7 @@
+[![PyPi Package Version](https://img.shields.io/pypi/v/calendar-pytba.svg)](https://pypi.python.org/pypi/calendar-pytba)
+[![Supported Python versions](https://img.shields.io/pypi/pyversions/calendar-pytba.svg)](https://pypi.python.org/pypi/calendar-pytba)
+[![PyPi downloads](https://img.shields.io/pypi/dm/calendar-pytba.svg)](https://pypi.org/project/calendar-pytba/)
+
 # calendar-pytba
 
 
