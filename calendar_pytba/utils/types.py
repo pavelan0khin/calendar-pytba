@@ -19,8 +19,6 @@ class CallBackData:
 
 
 class CalendarSymbol:
-
     EMPTY_DAY = " "
     NEXT_PAGE = "→"
     PREVIOUS_PAGE = "←"
-

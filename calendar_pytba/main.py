@@ -5,7 +5,7 @@ from dateutil.relativedelta import relativedelta
 from telebot import types  # noqa
 
 from calendar_pytba.utils import text
-from calendar_pytba.utils.types import CalendarLanguage, CallBackData, CalendarSymbol
+from calendar_pytba.utils.types import CalendarLanguage, CalendarSymbol, CallBackData
 
 
 class Calendar:
@@ -18,7 +18,7 @@ class Calendar:
         month_names: dict = text.MONTH_NAMES,
         week_days_names: dict = text.WEEK_DAYS_NAMES,
         week_days_short_names: dict = text.WEEK_DAYS_SHORT_NAMES,
-        start_from_sunday: bool = False
+        start_from_sunday: bool = False,
     ):
         """
         The language is responsible for writing the names of the months,

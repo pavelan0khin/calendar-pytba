@@ -4,7 +4,7 @@ from telebot import TeleBot, types
 
 from calendar_pytba import Calendar
 from calendar_pytba.utils import text
-from calendar_pytba.utils.types import CalendarLanguage, CallBackData, CalendarSymbol
+from calendar_pytba.utils.types import CalendarLanguage, CalendarSymbol, CallBackData
 
 
 def _extract_month_year(data: str) -> list:
@@ -12,15 +12,15 @@ def _extract_month_year(data: str) -> list:
 
 
 def callback_handler(
-        bot: TeleBot,
-        language: str = CalendarLanguage.EN,
-        empty_day_symbol: str = CalendarSymbol.EMPTY_DAY,
-        next_page_symbol: str = CalendarSymbol.NEXT_PAGE,
-        previous_page_symbol: str = CalendarSymbol.PREVIOUS_PAGE,
-        month_names: dict = text.MONTH_NAMES,
-        week_days_names: dict = text.WEEK_DAYS_NAMES,
-        week_days_short_names: dict = text.WEEK_DAYS_SHORT_NAMES,
-        start_from_sunday: bool = False
+    bot: TeleBot,
+    language: str = CalendarLanguage.EN,
+    empty_day_symbol: str = CalendarSymbol.EMPTY_DAY,
+    next_page_symbol: str = CalendarSymbol.NEXT_PAGE,
+    previous_page_symbol: str = CalendarSymbol.PREVIOUS_PAGE,
+    month_names: dict = text.MONTH_NAMES,
+    week_days_names: dict = text.WEEK_DAYS_NAMES,
+    week_days_short_names: dict = text.WEEK_DAYS_SHORT_NAMES,
+    start_from_sunday: bool = False,
 ):
     calendar = Calendar(
         language,
@@ -30,7 +30,7 @@ def callback_handler(
         month_names,
         week_days_names,
         week_days_short_names,
-        start_from_sunday
+        start_from_sunday,
     )
 
     @bot.callback_query_handler(
